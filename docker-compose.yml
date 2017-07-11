@@ -1,7 +1,7 @@
 version: '2'
 services:
   cache:
-    image: shusson/lru-cache
+    image: shusson/lru-cache:1.0
     restart: always
     volumes:
       - ./data:/data
