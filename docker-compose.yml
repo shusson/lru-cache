@@ -1,0 +1,9 @@
+version: '2'
+services:
+  cache:
+    image: shusson/lru-cache
+    restart: always
+    volumes:
+      - ./data:/data
+    ports:
+      - 6379:6379
